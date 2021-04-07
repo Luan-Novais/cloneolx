@@ -1,10 +1,10 @@
 import React from 'react';
 import { link } from 'react-router-dom'
 
-const Page = () => {
+const Home = () => {
     return(
         <div></div>
     );
 }
 
-export default Page;
+export default Home;

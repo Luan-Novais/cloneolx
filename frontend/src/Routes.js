@@ -1,7 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import Sobre from './pages/Sobre/Sobre';
+import Home from './pages/Home';
+import Sobre from './pages/Sobre';
+import NOT from './pages/NotFound';
+import Login from './pages/Login'
+
 
 
 export default () => {
@@ -12,6 +15,12 @@ export default () => {
             </Route>
             <Route exact path="/sobre">
                 <Sobre />
+            </Route>
+            <Route exact path="/login">
+                <Login />
+            </Route>
+            <Route>
+                <NOT />
             </Route>
         </Switch>
     );
